@@ -5,22 +5,22 @@ const projects = [
   {
     number: "01",
     type: "FULL-STACK",
-    title: "Project Name",
+    title: "Food Service Automation",
     year: "2026",
     status: "COMPLETED",
 
     description:
-      "A full-stack application built to solve a practical problem. This project helped me strengthen my understanding of application architecture, APIs, databases, and building software from end to end.",
+      "A small automation project for ordering lunch at the Siloam Hospitals, built as an introduction to Bash scripting and cron.",
 
     technologies: [
-      "React",
-      "Node.js",
-      "PostgreSQL",
-      "TypeScript",
+      "Python",
+      "Bash scripting",
+      "cron",
+      "wsl",
     ],
 
-    github: "https://github.com/yourusername/project",
-    demo: "https://your-project.com",
+    github: "https://github.com/jonathanjasperwork/food-service-automation",
+    demo: "",
   },
 
   {
@@ -41,7 +41,7 @@ const projects = [
     ],
 
     github: "https://github.com/yourusername/project",
-    demo: "",
+    demo: "https://your-project.com",
   },
 
   {
