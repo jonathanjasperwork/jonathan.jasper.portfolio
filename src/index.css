@@ -1,0 +1,184 @@
+/* =========================================================
+   GLOBAL DESIGN SYSTEM
+   ========================================================= */
+
+:root {
+  --bg: #080b10;
+  --bg-secondary: #0c1117;
+  --surface: #10161e;
+  --surface-hover: #141c25;
+
+  --text: #e6edf3;
+  --text-secondary: #b1bac4;
+  --text-muted: #8b949e;
+
+  --accent: #00d9ff;
+  --accent-hover: #33e2ff;
+  --accent-soft: rgba(0, 217, 255, 0.08);
+  --accent-border: rgba(0, 217, 255, 0.3);
+
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+
+  --success: #3fb950;
+  --warning: #d29922;
+
+  --max-width: 1200px;
+
+  --font-sans:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  --font-mono:
+    "JetBrains Mono",
+    "Fira Code",
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+
+  /* Hide scrollbar while keeping scrolling enabled */
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  min-width: 320px;
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 75% 20%,
+      rgba(0, 217, 255, 0.035),
+      transparent 30%
+    ),
+    var(--bg);
+
+  color: var(--text);
+
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body::before {
+  content: "";
+
+  position: fixed;
+  inset: 0;
+
+  pointer-events: none;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.018) 1px,
+      transparent 1px
+    );
+
+  background-size: 48px 48px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    transparent 80%
+  );
+
+  z-index: -1;
+}
+
+body::selection {
+  background: var(--accent);
+  color: #000;
+}
+
+::selection {
+  background: var(--accent);
+  color: #000;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+
+/* =========================================================
+   APP
+   ========================================================= */
+
+#root {
+  min-height: 100vh;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+}

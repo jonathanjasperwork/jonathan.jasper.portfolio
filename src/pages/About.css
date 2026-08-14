@@ -1,0 +1,310 @@
+/* =========================================================
+   ABOUT PAGE
+   ========================================================= */
+
+.about-page {
+  max-width: var(--max-width);
+
+  min-height: 100vh;
+
+  margin: 0 auto;
+
+  padding: 150px 5% 100px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.about-header {
+  position: relative;
+
+  margin-bottom: 70px;
+
+  padding-bottom: 40px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.about-header::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -1px;
+
+  width: 70px;
+  height: 2px;
+
+  background: var(--accent);
+}
+
+
+/* =========================================================
+   SECTION NUMBER
+   ========================================================= */
+
+.section-number {
+  margin: 0 0 20px;
+
+  color: var(--accent);
+
+  font-family: var(--font-mono);
+
+  font-size: 0.68rem;
+
+  letter-spacing: 0.15em;
+}
+
+.section-number::before {
+  content: "/";
+
+  margin-right: 7px;
+
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.about-header h1 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: clamp(2.5rem, 6vw, 5rem);
+
+  font-weight: 700;
+
+  line-height: 0.95;
+
+  letter-spacing: -0.065em;
+}
+
+
+/* =========================================================
+   CONTENT GRID
+   ========================================================= */
+
+.about-grid {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.8fr);
+
+  gap: 100px;
+
+  max-width: 1100px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.about-description {
+  color: var(--text-muted);
+
+  font-size: 1rem;
+
+  line-height: 1.85;
+}
+
+.about-description p {
+  margin: 0 0 28px;
+}
+
+.about-description p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.about-description .about-intro {
+  margin-bottom: 35px;
+
+  color: var(--text-secondary);
+
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+
+  line-height: 1.6;
+
+  letter-spacing: -0.02em;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.about-sidebar {
+  align-self: start;
+
+  padding-left: 25px;
+
+  border-left: 1px solid var(--border);
+}
+
+
+/* =========================================================
+   SIDEBAR LABEL
+   ========================================================= */
+
+.sidebar-label {
+  margin: 0 0 24px;
+
+  color: var(--accent);
+
+  font-family: var(--font-mono);
+
+  font-size: 0.65rem;
+
+  letter-spacing: 0.13em;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+.skills-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 35px;
+}
+
+.skills-list span {
+  padding: 7px 10px;
+
+  color: var(--text-secondary);
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border: 1px solid var(--border);
+
+  font-family: var(--font-mono);
+
+  font-size: 0.65rem;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.skills-list span:hover {
+  color: var(--accent);
+
+  border-color: var(--accent-border);
+
+  background: var(--accent-soft);
+}
+
+
+/* =========================================================
+   RESUME LINK
+   ========================================================= */
+
+.resume-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding-bottom: 5px;
+
+  color: var(--text);
+
+  border-bottom: 1px solid var(--accent-border);
+
+  text-decoration: none;
+
+  font-family: var(--font-mono);
+
+  font-size: 0.7rem;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.resume-link:hover {
+  color: var(--accent);
+
+  border-color: var(--accent);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .about-page {
+    padding-top: 130px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+  .about-sidebar {
+    padding-left: 0;
+
+    padding-top: 40px;
+
+    border-left: none;
+
+    border-top: 1px solid var(--border);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .about-page {
+    padding: 110px 6% 70px;
+  }
+
+  .about-header {
+    margin-bottom: 60px;
+
+    padding-bottom: 30px;
+  }
+
+  .about-header h1 {
+    font-size: clamp(3.2rem, 16vw, 5rem);
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+
+    line-height: 1.8;
+  }
+
+  .about-description .about-intro {
+    font-size: 1.2rem;
+  }
+
+  .about-sidebar {
+    padding-top: 30px;
+  }
+}

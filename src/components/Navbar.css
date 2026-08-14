@@ -1,0 +1,194 @@
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1000;
+
+  height: 72px;
+
+  background: rgba(8, 11, 16, 0.82);
+  border-bottom: 1px solid var(--border);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.navbar-inner {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 0 5%;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+
+  color: var(--text);
+
+  text-decoration: none;
+
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  letter-spacing: -0.03em;
+
+  transition: color 0.2s ease;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.logo:hover {
+  color: var(--accent);
+}
+
+
+/* =========================================================
+   NAV LINKS
+   ========================================================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+
+  margin-left: auto;
+  margin-right: 35px;
+}
+
+.nav-links a {
+  position: relative;
+
+  padding: 4px 0;
+
+  color: var(--text-muted);
+
+  text-decoration: none;
+
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -7px;
+
+  width: 0;
+  height: 1px;
+
+  background: var(--accent);
+
+  transition: width 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--text);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+/* =========================================================
+   GITHUB BUTTON
+   ========================================================= */
+
+.nav-github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 13px;
+
+  color: var(--accent);
+
+  border: 1px solid var(--accent-border);
+
+  background: transparent;
+
+  text-decoration: none;
+
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.nav-github:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent-hover);
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    gap: 20px;
+    margin-right: 20px;
+  }
+
+  .nav-links a {
+    font-size: 0.65rem;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .navbar {
+    height: 64px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-github {
+    padding: 7px 11px;
+  }
+}
