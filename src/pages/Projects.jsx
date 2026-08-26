@@ -25,23 +25,20 @@ const projects = [
 
   {
     number: "02",
-    type: "SOFTWARE",
-    title: "Project Name",
-    year: "2025",
+    type: "SECURITY",
+    title: "Password Strength Lab",
+    year: "2026",
     status: "COMPLETED",
 
     description:
-      "A project focused on improving my understanding of backend development and how different components of an application communicate with each other.",
+      "A hands-on cybersecurity lab exploring how password length, character sets, and predictability affect password security using John the Ripper.",  
 
     technologies: [
-      "React",
-      "Express",
-      "SQL",
-      "REST API",
+      "John the Ripper",
     ],
 
-    github: "https://github.com/yourusername/project",
-    demo: "https://your-project.com",
+    github: "https://github.com/jonathanjasperwork/password-strength-lab",
+    demo: "",
   },
 
   {
