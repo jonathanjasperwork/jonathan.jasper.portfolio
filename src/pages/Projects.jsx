@@ -41,46 +41,46 @@ const projects = [
     demo: "",
   },
 
-  {
-    number: "03",
-    type: "SECURITY / LEARNING",
-    title: "Project Name",
-    year: "2026",
-    status: "IN PROGRESS",
+  // {
+  //   number: "03",
+  //   type: "SECURITY / LEARNING",
+  //   title: "Project Name",
+  //   year: "2026",
+  //   status: "IN PROGRESS",
 
-    description:
-      "A learning project exploring security concepts from a developer's perspective, with a focus on understanding how applications can be designed and built more securely.",
+  //   description:
+  //     "A learning project exploring security concepts from a developer's perspective, with a focus on understanding how applications can be designed and built more securely.",
 
-    technologies: [
-      "Python",
-      "Linux",
-      "OWASP",
-      "APIs",
-    ],
+  //   technologies: [
+  //     "Python",
+  //     "Linux",
+  //     "OWASP",
+  //     "APIs",
+  //   ],
 
-    github: "https://github.com/yourusername/project",
-    demo: "",
-  },
+  //   github: "https://github.com/yourusername/project",
+  //   demo: "",
+  // },
 
-  {
-    number: "04",
-    type: "EXPERIMENT",
-    title: "Project Name",
-    year: "2025",
-    status: "COMPLETED",
+  // {
+  //   number: "04",
+  //   type: "EXPERIMENT",
+  //   title: "Project Name",
+  //   year: "2025",
+  //   status: "COMPLETED",
 
-    description:
-      "An experimental project created to explore a new technology and better understand how it could be applied in a real application.",
+  //   description:
+  //     "An experimental project created to explore a new technology and better understand how it could be applied in a real application.",
 
-    technologies: [
-      "Python",
-      "Docker",
-      "API",
-    ],
+  //   technologies: [
+  //     "Python",
+  //     "Docker",
+  //     "API",
+  //   ],
 
-    github: "https://github.com/yourusername/project",
-    demo: "",
-  },
+  //   github: "https://github.com/yourusername/project",
+  //   demo: "",
+  // },
 ];
 
 
