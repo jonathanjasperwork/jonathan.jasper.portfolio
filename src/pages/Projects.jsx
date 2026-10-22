@@ -4,6 +4,40 @@ import "./Projects.css";
 const projects = [
   {
     number: "01",
+    type: "SECURITY",
+    title: "honeypot-lab",
+    year: "2026",
+    status: "COMPLETED",
+
+    description:
+      "A hands-on cybersecurity lab exploringA Cowrie-based SSH/Telnet honeypot homelab that collects, stores, and analyzes attacker activity to identify common attack scenarios, authentication attempts, command execution, and malware delivery attempts.",
+
+    technologies: [
+      "Cowrie",
+    ],
+
+    github: "https://github.com/jonathanjasperwork/honeypot-homelab",
+    demo: "",
+  },
+  {
+    number: "02",
+    type: "SECURITY",
+    title: "Password Strength Lab",
+    year: "2026",
+    status: "COMPLETED",
+
+    description:
+      "A hands-on cybersecurity lab exploring how password length, character sets, and predictability affect password security using John the Ripper.",  
+
+    technologies: [
+      "John the Ripper",
+    ],
+
+    github: "https://github.com/jonathanjasperwork/password-strength-lab",
+    demo: "",
+  },
+  {
+    number: "03",
     type: "FULL-STACK",
     title: "Food Service Automation",
     year: "2026",
@@ -20,24 +54,6 @@ const projects = [
     ],
 
     github: "https://github.com/jonathanjasperwork/food-service-automation",
-    demo: "",
-  },
-
-  {
-    number: "02",
-    type: "SECURITY",
-    title: "Password Strength Lab",
-    year: "2026",
-    status: "COMPLETED",
-
-    description:
-      "A hands-on cybersecurity lab exploring how password length, character sets, and predictability affect password security using John the Ripper.",  
-
-    technologies: [
-      "John the Ripper",
-    ],
-
-    github: "https://github.com/jonathanjasperwork/password-strength-lab",
     demo: "",
   },
 
