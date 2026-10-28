@@ -24,6 +24,26 @@ const experiences = [
 
   {
     number: "05",
+    role: "Data Analyst",
+    company: "PT. Vektor Inti Prima",
+    period: "04/2025 - present",
+
+    description: [
+      "This was my first experience collecting data directly from the internet, which gave me a different perspective from my usual work of consuming APIs.",
+      "I learned how to scrape and transform raw data into meaningful information while also discovering the challenges of automation when some data cannot be reliably extracted and requires manual work.",
+    ],
+
+    technologies: [
+      "Python",
+      "Javascript",
+      "BeautifulSoup",
+      "Selenium",
+      "Pandas"
+    ],
+  },  
+
+  {
+    number: "04",
     role: "Full Stack Developer",
     company: "Siloam Hospitals",
     period: "07/2025 - 03/2026",
@@ -42,26 +62,6 @@ const experiences = [
       "CLEAN Architecture",
       "SOLID Principle",
       "Elastic Stack"
-    ],
-  },
-
-  {
-    number: "04",
-    role: "Web Scraper & Data Automation",
-    company: "PT. Vektor Inti Prima",
-    period: "04/2025 - 06/2026",
-
-    description: [
-      "This was my first experience collecting data directly from the internet, which gave me a different perspective from my usual work of consuming APIs.",
-      "I learned how to scrape and transform raw data into meaningful information while also discovering the challenges of automation when some data cannot be reliably extracted and requires manual work.",
-    ],
-
-    technologies: [
-      "Python",
-      "Javascript",
-      "BeautifulSoup",
-      "Selenium",
-      "Pandas"
     ],
   },
 
