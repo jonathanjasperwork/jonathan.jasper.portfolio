@@ -6,7 +6,24 @@ const projects = [
     number: "01",
     type: "SECURITY",
     title: "honeypot-lab",
-    year: "2026",
+    year: "October 2026",
+    status: "COMPLETED",
+
+    description:
+      "A hands-on cybersecurity lab exploringA Cowrie-based SSH/Telnet honeypot homelab that collects, stores, and analyzes attacker activity to identify common attack scenarios, authentication attempts, command execution, and malware delivery attempts.",
+
+    technologies: [
+      "Cowrie",
+    ],
+
+    github: "https://github.com/jonathanjasperwork/pedal-data-dashboard",
+    demo: "https://pedal-data-dashboard.streamlit.app",
+  },
+  {
+    number: "02",
+    type: "SECURITY",
+    title: "honeypot-lab",
+    year: "October 2026",
     status: "COMPLETED",
 
     description:
@@ -20,10 +37,10 @@ const projects = [
     demo: "",
   },
   {
-    number: "02",
+    number: "03",
     type: "SECURITY",
     title: "Password Strength Lab",
-    year: "2026",
+    year: "August 2026",
     status: "COMPLETED",
 
     description:
@@ -37,10 +54,10 @@ const projects = [
     demo: "",
   },
   {
-    number: "03",
+    number: "04",
     type: "FULL-STACK",
     title: "Food Service Automation",
-    year: "2026",
+    year: "August 2026",
     status: "COMPLETED",
 
     description:
