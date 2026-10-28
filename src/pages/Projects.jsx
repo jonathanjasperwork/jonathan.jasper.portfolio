@@ -4,13 +4,13 @@ import "./Projects.css";
 const projects = [
   {
     number: "01",
-    type: "SECURITY",
-    title: "honeypot-lab",
+    type: "DATA ANALYTICS",
+    title: "pedal-analytics-dashboard",
     year: "October 2026",
     status: "COMPLETED",
 
     description:
-      "A hands-on cybersecurity lab exploringA Cowrie-based SSH/Telnet honeypot homelab that collects, stores, and analyzes attacker activity to identify common attack scenarios, authentication attempts, command execution, and malware delivery attempts.",
+      "A Streamlit dashboard for analyzing padel courts in Indonesia using a dataset of approximately 1,400 courts",
 
     technologies: [
       "Cowrie",
@@ -21,7 +21,7 @@ const projects = [
   },
   {
     number: "02",
-    type: "SECURITY",
+    type: "DATA ANALYTICS + SECURITY",
     title: "honeypot-lab",
     year: "October 2026",
     status: "COMPLETED",
@@ -38,7 +38,7 @@ const projects = [
   },
   {
     number: "03",
-    type: "SECURITY",
+    type: "RESEARCH + SECURITY",
     title: "Password Strength Lab",
     year: "August 2026",
     status: "COMPLETED",
