@@ -13,7 +13,10 @@ const projects = [
       "A Streamlit dashboard for analyzing padel courts in Indonesia using a dataset of approximately 1,400 courts",
 
     technologies: [
-      "Cowrie",
+      "Python",
+      "Beautiful Soup",
+      "Pandas",
+      "Numpy"
     ],
 
     github: "https://github.com/jonathanjasperwork/pedal-data-dashboard",
